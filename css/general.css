@@ -1,7 +1,10 @@
-*{
+/* Reseteo del modelo de caja */
+* {
     box-sizing: border-box;
 }
-body{
+
+/* Estilos generales del cuerpo de la página */
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f8;
@@ -9,54 +12,110 @@ body{
     line-height: 1.6;
 }
 
-h1{
+/* Título principal */
+h1 {
     margin: 0;
     font-size: 34px;
     text-align: center;
 }
 
-h2{
+/* Subtítulos con borde decorativo */
+h2 {
     color: #1b7505;
     margin-top: 0;
     border-bottom: 5px solid #dba112;
     padding-bottom: 6px;
 }
 
-h3{
-    color:#0d1910;
+/* Títulos de tercer nivel */
+h3 {
+    color: #0d1910;
 }
-p{
+
+/* Formato general de párrafos */
+p {
     font-size: 16px;
     text-align: justify;
 }
 
-a{
+/* Enlaces generales */
+a {
     color: #1b7505;
     text-decoration: none;
 }
 
-a:hover{
+/* Efecto al pasar el cursor sobre enlaces */
+a:hover {
     text-decoration: underline;
 }
-header{
+
+/* Encabezado principal */
+header {
     background-color: #0d1910;
     color: white;
     padding: 28px 16px;
     text-align: center;
 }
-header p{
+
+/* Párrafos dentro del encabezado */
+header p {
     font-size: 16px;
-    text-align: justify;
+    text-align: center;
 }
 
-footer{
+/* Pie de página */
+footer {
     background-color: #0d1910;
     color: white;
     text-align: center;
     padding: 20px 16px;
     margin-top: 30px;
 }
-footer p{
+
+/* Párrafos dentro del pie de página */
+footer p {
     text-align: center;
     margin: 5px 0;
+}
+
+/* Barra de navegación modernizada */
+nav {
+    background-color: #122115; 
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap; 
+    border-bottom: 4px solid #dba112; 
+}
+
+/* Enlaces de la barra de navegación */
+nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+/* Efecto hover interactivo en navegación */
+nav a:hover {
+    background-color: #dba112; 
+    color: #0d1910; 
+    text-decoration: none;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Contenedores de artículos (Tarjetas blancas) */
+article {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
